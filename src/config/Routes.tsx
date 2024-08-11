@@ -19,7 +19,6 @@ import CustomerDetail from '../pages/CustomerDetail';
 import ListBooking from '../pages/ListBooking';
 import Payment from '../pages/Payment';
 import AddInventory from '../pages/AddInventory';
-<<<<<<< HEAD
 import InventoryList from '../pages/InventoryList';
 import ProtectedRoute from './ProtectedRoute';
 import AdminRoute from './AdminRoutes';
@@ -183,54 +182,6 @@ const AppRouter: React.FC = () => {
         </Router>
       </Box>
     </AuthContextProvider>
-=======
-import InventoryList from '../pages/listInventory';
-const AppRouter: React.FC = () => {
-  return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        minHeight: '100vh',
-      }}
-    >
-      <CssBaseline />
-      <Router>
-        <Navbar />
-        <Box
-          component="main"
-          sx={{
-            flex: '1 0 auto',
-            p: 3,
-          }}
-        >
-          <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<RegisterForm />} />
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/add-room" element={<AddRoom />} />
-            <Route path="/add-staff" element={<AddStaff />} />
-            <Route path="/list-room" element={<RoomList />} />
-            <Route path="/edit-staff/:id" element={<EditStaff />} />
-            <Route path="/list-Staff" element={<StaffList />} />
-            <Route path="/add-service" element={<AddService />} />
-            <Route path="/add-inventory" element={<AddInventory />} />
-
-            <Route path="/edit-room/:id" element={<EditRoom />} />
-            <Route path="/list-service" element={<ServiceList />} />
-            <Route path='/edit-service/:id' element={<EditService />} />
-            <Route path='/booking' element={<Booking />} />
-            <Route path='/customer-detail' element={<CustomerDetail />} />
-            <Route path='/list-inventory' element={<InventoryList />} />
-
-            <Route path='/list-booking' element={<ListBooking />} />
-            <Route path='/payment' element={<Payment />} />
-
-          </Routes>
-        </Box>
-      </Router>
-    </Box>
->>>>>>> de6c4eb551df7366e74bda549af7f808b0af0d58
   );
 };
 
