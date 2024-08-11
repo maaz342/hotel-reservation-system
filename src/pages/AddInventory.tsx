@@ -73,8 +73,5 @@ const AddInventory: React.FC = () => {
     );
 };
 
-<<<<<<< HEAD
 export default AddInventory;
-=======
-export default AddInventory;
->>>>>>> de6c4eb551df7366e74bda549af7f808b0af0d58
+
