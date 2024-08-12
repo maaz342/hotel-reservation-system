@@ -24,6 +24,7 @@ import ProtectedRoute from './ProtectedRoute';
 import AdminRoute from './AdminRoutes';
 import { AuthContextProvider, useAuth } from '../context/AuthContext';
 import Footer from '../layout/Footer';
+import Inventory from '../pages/InventoryList';
 
 const AppRouter: React.FC = () => {
   return (
@@ -101,6 +102,14 @@ const AppRouter: React.FC = () => {
                 element={
                   <AdminRoute>
                     <AddService />
+                  </AdminRoute>
+                }
+              />
+               <Route
+                path="/edit/:id"
+                element={
+                  <AdminRoute>
+                    <Inventory />
                   </AdminRoute>
                 }
               />

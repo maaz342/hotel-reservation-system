@@ -73,7 +73,7 @@ const InventoryList: React.FC = () => {
   ];
 
   return (
-    <div style={{ padding: '20px', backgroundColor: 'purple', minHeight: '100vh' }}>
+    <div>
       <div style={{ marginBottom: 16 }}>
         <Link to="/add-inventory">
           <Button type="primary">Add Inventory</Button>

@@ -12,7 +12,7 @@ interface InventoryItem {
   status: string;
 }
 
-const InventoryList: React.FC = () => {
+const Inventory: React.FC = () => {
   const [inventory, setInventory] = useState<InventoryItem[]>([]);
 
   useEffect(() => {
@@ -85,4 +85,4 @@ const InventoryList: React.FC = () => {
   );
 };
 
-export default InventoryList;
+export default Inventory;
